@@ -1,0 +1,2 @@
+13:41:44 GET / : 404 This api does not exist.
+13:48:13 POST /cus/add : 409 ID Card is exist

@@ -1,0 +1,62 @@
+POST http://localhost:8080/admin/add
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEyMTU2MzEsImV4cCI6MTY1MTMwMjAzMX0.1HzmAdCRuJr9UGNDierWpTGONVfaTSwSeM0cN-y4pyg
+
+{
+  "id":"admin",
+  "email": "lebathanhdnc@gmail.com",
+  "password":"123456"
+}
+
+###
+POST http://localhost:8080/admin/login
+Content-Type: application/json
+
+{
+  "id":"admin",
+  "password":"333333"
+}
+
+###
+DELETE http://localhost:8080/admin/delete
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTA5NTg5MTksImV4cCI6MTY1MTA0NTMxOX0.daHMKgfk6ZhlidY6WHohlEJvummTs-D31Nr0LEgCDtc
+
+{
+  "_id": "6267a3c0675696d1d5190b58"
+}
+
+###
+PATCH http://localhost:8080/admin/changepass
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTA5NTg5MTksImV4cCI6MTY1MTA0NTMxOX0.daHMKgfk6ZhlidY6WHohlEJvummTs-D31Nr0LEgCDtc
+
+{
+  "_id": "6267a1c8d96a002838e8e495",
+  "oldPassword":"123456",
+  "newPassword":"111111"
+}
+
+###
+PATCH http://localhost:8080/admin/reset?authorization=Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTA5NTg5MTksImV4cCI6MTY1MTA0NTMxOX0.daHMKgfk6ZhlidY6WHohlEJvummTs-D31Nr0LEgCDtc
+Content-Type: application/json
+
+{
+  "password":"333333"
+}
+
+###
+POST http://localhost:8080/admin/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI4NTUzMDksImV4cCI6MTY4NDQxMjkwOX0.0VJ1zQ6sS2CgIkpK1Jdh9fEpIGBU4XuksCklE19hyjc"
+}
+
+###
+DELETE http://localhost:8080/admin/logout
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEwNDQ5MDgsImV4cCI6MTY4MjYwMjUwOH0.xWLm_0IrX_7TYAkzvu0APVzB4-E7eQ1otwAPtlNAMK8"
+}

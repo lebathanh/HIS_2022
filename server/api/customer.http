@@ -1,0 +1,75 @@
+// Add cus
+POST http://localhost:8080/cus/add
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEyMTU2MzEsImV4cCI6MTY1MTMwMjAzMX0.1HzmAdCRuJr9UGNDierWpTGONVfaTSwSeM0cN-y4pyg
+
+{
+  "name": "le ba dat",
+  "birth": "08/22/1999",
+  "gender": "nam",
+  "citizenship": "viet nam",
+  "ethnic": "kinh",
+  "idCard": "371861767",
+  "phone": "0916455830",
+  "birthCertificatePlace": "kien giang",
+  "guardian": null,
+  "address": "kien giang",
+  # "job":"",
+  # "salary":"",
+  # "cusGroups": "",
+  "avatar": "https://sites.google.com/site/hinhanhdep24h/_/rsrc/1436687439788/home/hinh%20anh%20thien%20nhien%20dep%202015%20%281%29.jpeg"
+}
+
+###
+// update cus
+PATCH http://localhost:8080/cus/edit
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEyMTU2MzEsImV4cCI6MTY1MTMwMjAzMX0.1HzmAdCRuJr9UGNDierWpTGONVfaTSwSeM0cN-y4pyg
+
+{
+  "_id": "626bb2c18a082b7fd44f29d9",
+  "name": "thuy vy",
+  "birth": "08/22/1999",
+  "gender": "nam",
+  "citizenship": "viet nam",
+  "ethnic": "kinh",
+  "idCard": "371861727",
+  "phone": "0916455830",
+  "birthCertificatePlace": "kien giang",
+  "guardian": null,
+  "address": "kien giang",
+  # "job":"",
+  # "salary":"",
+  # "cusGroups": "",
+  "avatar": "https://sites.google.com/site/hinhanhdep24h/_/rsrc/1436687439788/home/hinh%20anh%20thien%20nhien%20dep%202015%20%281%29.jpeg"
+}
+
+###
+// delete cus
+DELETE http://localhost:8080/cus/delete?_id=626bc7c11d66892bc67d9eed
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEyMTU2MzEsImV4cCI6MTY1MTMwMjAzMX0.1HzmAdCRuJr9UGNDierWpTGONVfaTSwSeM0cN-y4pyg
+
+###
+// get all
+GET http://localhost:8080/cus/getall
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEyMTU2MzEsImV4cCI6MTY1MTMwMjAzMX0.1HzmAdCRuJr9UGNDierWpTGONVfaTSwSeM0cN-y4pyg
+
+###
+// get by _id
+GET http://localhost:8080/cus/getbyid?_id=626bb2c18a082b7fd44f29d9
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEyMTU2MzEsImV4cCI6MTY1MTMwMjAzMX0.1HzmAdCRuJr9UGNDierWpTGONVfaTSwSeM0cN-y4pyg
+
+###
+// get by idCard
+GET http://localhost:8080/cus/getbyidcard?id=371861727
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEyMTU2MzEsImV4cCI6MTY1MTMwMjAzMX0.1HzmAdCRuJr9UGNDierWpTGONVfaTSwSeM0cN-y4pyg
+
+###
+// search cus
+GET http://localhost:8080/cus/search?text=th
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEyMTU2MzEsImV4cCI6MTY1MTMwMjAzMX0.1HzmAdCRuJr9UGNDierWpTGONVfaTSwSeM0cN-y4pyg

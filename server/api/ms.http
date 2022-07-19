@@ -1,0 +1,50 @@
+POST http://localhost:8080/ms/add
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIyNTc4ODcsImV4cCI6MTY1MjM0NDI4N30.SQv_FA8QJVQkMYi8B6VPN9_3S0VLR6rLdxN3F7z6h0k
+
+{
+  "name":"EXAMPLE",
+  "calculationUnit": "Tip",
+  "prices": 2300,
+  "objects": ["626fab651708271ca52a2a58", "626fab651708271ca52a2a59", "626fab651708271ca52a2a50"],
+  "descriptions": "Là mã nơi người dân tộc thiểu số và người thuộc hộ gia đình nghèo tham gia BHYT, đang sinh sống tại vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn theo quy định của pháp luật."
+}
+
+###
+// update
+PATCH http://localhost:8080/ms/edit
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIyNTc4ODcsImV4cCI6MTY1MjM0NDI4N30.SQv_FA8QJVQkMYi8B6VPN9_3S0VLR6rLdxN3F7z6h0k
+
+{
+  "_id":"627b807cf2c4e2e6f8e8b863",
+  "name":"GENTRIDECME",
+  "calculationUnit": "Tip",
+  "prices": 2300,
+  "objects": ["626fab651708271ca52a2a58", "626fab651708271ca52a2a59", "626fab651708271ca52a2a50"],
+  "descriptions": "Là mã nơi người dân tộc thiểu số và người thuộc hộ gia đình nghèo tham gia BHYT, đang sinh sống tại vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn theo quy định của pháp luật."
+}
+
+###
+// delete
+DELETE  http://localhost:8080/ms/delete?_id=626f9cd6cf3cfd0bdc68b780
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIyNTc4ODcsImV4cCI6MTY1MjM0NDI4N30.SQv_FA8QJVQkMYi8B6VPN9_3S0VLR6rLdxN3F7z6h0k
+
+###
+// get all
+GET  http://localhost:8080/ms/getall
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIyNTc4ODcsImV4cCI6MTY1MjM0NDI4N30.SQv_FA8QJVQkMYi8B6VPN9_3S0VLR6rLdxN3F7z6h0k
+
+###
+// get by _id
+GET  http://localhost:8080/ms/getbyid?_id=627b83d7d23e9e5de575bb3e
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIyNTc4ODcsImV4cCI6MTY1MjM0NDI4N30.SQv_FA8QJVQkMYi8B6VPN9_3S0VLR6rLdxN3F7z6h0k
+
+###
+// search
+GET http://localhost:8080/ms/search?text=d
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIyNTc4ODcsImV4cCI6MTY1MjM0NDI4N30.SQv_FA8QJVQkMYi8B6VPN9_3S0VLR6rLdxN3F7z6h0k

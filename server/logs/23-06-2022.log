@@ -1,0 +1,21 @@
+17:29:03 GET /cus/getall : 404 This api does not exist.
+17:29:08 GET /cus/getall : 404 This api does not exist.
+17:29:09 GET /cus/getall : 404 This api does not exist.
+17:29:26 GET /cus/getall : 404 This api does not exist.
+17:29:27 GET /cus/getall : 404 This api does not exist.
+17:29:55 GET /cus/getall : 404 This api does not exist.
+17:30:07 GET /cus/getall : 404 This api does not exist.
+17:30:09 GET /cus/getall : 404 This api does not exist.
+18:01:59 POST /cus/add : 400 "gender" is not allowed to be empty
+18:02:12 POST /cus/add : 400 "gender" is not allowed to be empty
+18:08:10 GET /cus/getall : 404 This api does not exist.
+18:27:44 POST /cus/add : 409 ID Card is exist
+19:50:43 PATCH /cusgs/edit : undefined item is not defined
+19:55:02 DELETE /cusgs/delete?_id=undefined : undefined Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "CustomerGroups"
+23:04:29 POST /insurance/add : 400 "customer" is not allowed to be empty
+23:05:01 POST /insurance/add : 400 "customer" is not allowed to be empty
+23:05:29 POST /insurance/add : 400 "customer" is not allowed to be empty
+23:31:24 POST /bill/add : undefined E11000 duplicate key error collection: BHYT.Bills index: customer_1 dup key: { customer: ObjectId('62b449917196151db7094e58') }
+23:33:02 POST /bill/add : undefined E11000 duplicate key error collection: BHYT.Bills index: customer_1 dup key: { customer: ObjectId('62b449917196151db7094e58') }
+23:38:01 POST /bill/add : 409 Chua thanh toan
+01:04:07 PATCH /bill/edit : 400 "receiver" must be of type object

@@ -1,0 +1,8 @@
+01:22:50 DELETE /bill/delete?_id=62b4a7e7795b5562a8e2a2a3 : 403 Customer had paid! You can not delete this bill
+05:09:17 DELETE /insurance/dow : 404 This api does not exist.
+05:12:05 GET /insurance/dow : undefined foundBill is not defined
+05:12:25 GET /insurance/dow : undefined ENOENT: no such file or directory, open 'E:\NuxtJS\LVTN\server\public\files\abc.txt'
+05:25:21 GET /insurance/dow : undefined Cannot read properties of undefined (reading 'replace')
+05:25:57 GET /insurance/dow : undefined Cannot read properties of undefined (reading 'replace')
+05:28:17 GET /insurance/dow : undefined Cannot read properties of undefined (reading 'replace')
+05:28:37 GET /insurance/dow : undefined Cannot read properties of undefined (reading 'replace')

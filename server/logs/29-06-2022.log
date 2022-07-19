@@ -1,0 +1,22 @@
+16:11:52 GET /statis/file : 401 Unauthorized
+16:11:52 GET /favicon.ico : 404 This api does not exist.
+16:57:50 GET /statis/file?_id=62bb0a955088176eb397048f : undefined worksheet is not defined
+16:58:16 GET /statis/file?_id=62bb0a955088176eb397048f : undefined worksheet is not defined
+16:59:41 GET /statis/file?_id=62bb0a955088176eb397048f : undefined clg is not defined
+17:00:06 GET /statis/file?_id=62bb0a955088176eb397048f : undefined clg is not defined
+17:00:38 GET /statis/file?_id=62bb0a955088176eb397048f : undefined worksheet is not defined
+17:01:59 GET /statis/file?_id=62bb0a955088176eb397048f : undefined worksheet is not defined
+17:58:14 GET /admin/getall : 401 Unauthorized
+17:58:31 GET /admin/getall : 401 Unauthorized
+17:58:32 GET / : 404 This api does not exist.
+22:40:02 DELETE /bill/delete?_id=62baf4b55088176eb3970139 : 403 Customer had paid! You can not delete this bill
+22:54:35 POST /cus/add : undefined undefined
+23:11:46 POST /bill/add : 409 Chua thanh toan
+23:28:16 GET /admin/getall : 401 Unauthorized
+23:30:16 GET /admin/getall : 401 Unauthorized
+23:31:29 GET /admin/getall : 401 Unauthorized
+23:32:03 GET /admin/getall : 401 Unauthorized
+23:32:04 GET /admin/getall : 401 Unauthorized
+23:32:04 GET /admin/getall : 401 Unauthorized
+23:32:07 GET /admin/getall : 401 Unauthorized
+23:33:26 GET /admin/getall : 401 Unauthorized

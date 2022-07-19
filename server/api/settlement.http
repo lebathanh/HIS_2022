@@ -1,0 +1,46 @@
+POST http://localhost:8080/settlement/add
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI2OTE5ODYsImV4cCI6MTY1Mjc3ODM4Nn0.VWw_ThimDvZ0KW5tKMAMBsdliV6L7J0bfvNOoflBpmI
+
+{
+  "statisticals": ["628223cd52f41f62676658a6"],
+  "quarter": 1,
+  "year": 2022,
+  "status": false
+}
+
+###
+// update
+PATCH http://localhost:8080/settlement/edit
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI2OTE5ODYsImV4cCI6MTY1Mjc3ODM4Nn0.VWw_ThimDvZ0KW5tKMAMBsdliV6L7J0bfvNOoflBpmI
+
+{
+  "statisticals": ["628223cd52f41f62676658a6"],
+  "quarter": 1,
+  "year": 2022,
+  "status": false
+}
+
+###
+// delete
+DELETE  http://localhost:8080/settlement/delete?_id=628225b6325598004d7bfc23
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI2OTE5ODYsImV4cCI6MTY1Mjc3ODM4Nn0.VWw_ThimDvZ0KW5tKMAMBsdliV6L7J0bfvNOoflBpmI
+
+###
+// get all
+GET  http://localhost:8080/settlement/getall
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI2OTE5ODYsImV4cCI6MTY1Mjc3ODM4Nn0.VWw_ThimDvZ0KW5tKMAMBsdliV6L7J0bfvNOoflBpmI
+
+###
+// get by _id
+GET  http://localhost:8080/settlement/getbyid?_id=627cd0d20102dd65b883cb3c
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI2OTE5ODYsImV4cCI6MTY1Mjc3ODM4Nn0.VWw_ThimDvZ0KW5tKMAMBsdliV6L7J0bfvNOoflBpmI
+
+###
+GET  http://localhost:8080/settlement/filter?year=2023
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI2OTE5ODYsImV4cCI6MTY1Mjc3ODM4Nn0.VWw_ThimDvZ0KW5tKMAMBsdliV6L7J0bfvNOoflBpmI

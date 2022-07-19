@@ -1,0 +1,38 @@
+POST http://localhost:8080/places/add
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTE0Njc5NTksImV4cCI6MTY1MTU1NDM1OX0.17KXND3Kk1d3AyxHcHh55mopjg80LgL-UFck24qDAOg
+
+{
+  "id":"K2",
+  "descriptions": "Là mã nơi người dân tộc thiểu số và người thuộc hộ gia đình nghèo tham gia BHYT, đang sinh sống tại vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn theo quy định của pháp luật."
+}
+
+###
+// update
+PATCH http://localhost:8080/places/edit
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTE0Njc5NTksImV4cCI6MTY1MTU1NDM1OX0.17KXND3Kk1d3AyxHcHh55mopjg80LgL-UFck24qDAOg
+
+{
+  "_id":"626f9cd6cf3cfd0bdc68b780",
+  "id":"K3",
+  "descriptions": "Người tham gia được thanh toán 100% chi phí KCB thuộc phạm vi chi trả BHYT và không áp dụng giới hạn tỷ lệ thanh toán một số thuốc, hóa chất, vật tư y tế (VTYT) và dịch vụ kỹ thuật (DVKT) theo quy định của Bộ trưởng Bộ Y tế về danh mục và tỷ lệ, điều kiện thanh toán DVKT; chi phí vận chuyển người bệnh từ tuyến huyện lên tuyến trên trong trường hợp cấp cứu hoặc khi đang điều trị nội trú phải chuyển tuyến chuyên môn kỹ thuật."
+}
+
+###
+// delete
+DELETE  http://localhost:8080/places/delete?_id=626f9cd6cf3cfd0bdc68b780
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTE0Njc5NTksImV4cCI6MTY1MTU1NDM1OX0.17KXND3Kk1d3AyxHcHh55mopjg80LgL-UFck24qDAOg
+
+###
+// get all
+GET  http://localhost:8080/places/getall
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTE0Njc5NTksImV4cCI6MTY1MTU1NDM1OX0.17KXND3Kk1d3AyxHcHh55mopjg80LgL-UFck24qDAOg
+
+###
+// get by _id
+GET  http://localhost:8080/places/getbyid?_id=626f9e499d5677088567054d
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTE0Njc5NTksImV4cCI6MTY1MTU1NDM1OX0.17KXND3Kk1d3AyxHcHh55mopjg80LgL-UFck24qDAOg

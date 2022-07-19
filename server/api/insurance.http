@@ -1,0 +1,44 @@
+POST http://localhost:8080/insurance/add
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIxNzE4NjcsImV4cCI6MTY1MjI1ODI2N30.hpHr0ZKjhTObkerroIc62kBX86alROi51IfaOVrR6wg
+
+{
+  "customer": "626bb2c18a082b7fd44f29d9",
+  "benefitRate": "6270c69b860042e9a112138e",
+  "place": "626f9e499d5677088567054d",
+  "bills": ["a"]
+}
+
+###
+// update
+PATCH http://localhost:8080/insurance/edit
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIxNzE4NjcsImV4cCI6MTY1MjI1ODI2N30.hpHr0ZKjhTObkerroIc62kBX86alROi51IfaOVrR6wg
+
+{
+  "_id":"6278beeadb31270f1ac6e688",
+  "customer": "626bb2c18a082b7fd44f29d9",
+  "benefitRate": "6270c69b860042e9a112138e",
+  "place": "626f9e499d5677088567054d",
+  "effectFrom": "09-9-2022",
+  "effectTo": "09-9-2022",
+  "bills": ["a"]
+}
+
+###
+// delete
+DELETE  http://localhost:8080/insurance/delete?_id=6278beeadb31270f1ac6e688
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIxNzE4NjcsImV4cCI6MTY1MjI1ODI2N30.hpHr0ZKjhTObkerroIc62kBX86alROi51IfaOVrR6wg
+
+###
+// get all
+GET  http://localhost:8080/insurance/getall
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIxNzE4NjcsImV4cCI6MTY1MjI1ODI2N30.hpHr0ZKjhTObkerroIc62kBX86alROi51IfaOVrR6wg
+
+###
+// get by _id
+GET  http://localhost:8080/insurance/getbyid?_id=6278cf43d59ce7e272cfae16
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIxNzE4NjcsImV4cCI6MTY1MjI1ODI2N30.hpHr0ZKjhTObkerroIc62kBX86alROi51IfaOVrR6wg

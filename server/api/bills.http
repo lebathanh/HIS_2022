@@ -1,0 +1,57 @@
+POST http://localhost:8080/bill/add
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIxNzE4NjcsImV4cCI6MTY1MjI1ODI2N30.hpHr0ZKjhTObkerroIc62kBX86alROi51IfaOVrR6wg
+
+{
+  "customer": "626bb2c18a082b7fd44f29d9",
+  "quantity": 1,
+  "money": 350000,
+  "paid": true,
+  "dateOfIssue": "5/10/2022",
+  "receiver": {
+    "name": "le ba thanh",
+    "phone": "0916455830",
+    "address": "Can tho"
+  }
+}
+
+###
+// update
+PATCH http://localhost:8080/bill/edit
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIxNzE4NjcsImV4cCI6MTY1MjI1ODI2N30.hpHr0ZKjhTObkerroIc62kBX86alROi51IfaOVrR6wg
+
+{
+  "_id":"627a4db240c9f27b159baf2b",
+  "paid": false,
+  "dateOfIssue": "5/10/2022",
+  "receiver": {
+    "name": "le ba vy",
+    "phone": "0916455830",
+    "address": "Can tho"
+  }
+}
+
+###
+// delete
+DELETE  http://localhost:8080/bill/delete?_id=627a4db240c9f27b159baf2b
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIxNzE4NjcsImV4cCI6MTY1MjI1ODI2N30.hpHr0ZKjhTObkerroIc62kBX86alROi51IfaOVrR6wg
+
+###
+// get all
+GET  http://localhost:8080/bill/getall
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIxNzE4NjcsImV4cCI6MTY1MjI1ODI2N30.hpHr0ZKjhTObkerroIc62kBX86alROi51IfaOVrR6wg
+
+###
+// get by _id
+GET  http://localhost:8080/bill/getbyid?_id=627a4db240c9f27b159baf2b
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIxNzE4NjcsImV4cCI6MTY1MjI1ODI2N30.hpHr0ZKjhTObkerroIc62kBX86alROi51IfaOVrR6wg
+
+###
+// get by cus
+GET  http://localhost:8080/bill/getbycus?_id=626bb2c18a082b7fd44f29d9
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTIxNzE4NjcsImV4cCI6MTY1MjI1ODI2N30.hpHr0ZKjhTObkerroIc62kBX86alROi51IfaOVrR6wg

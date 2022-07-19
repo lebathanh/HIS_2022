@@ -1,0 +1,67 @@
+POST http://localhost:8080/statis/add
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI2OTE5ODYsImV4cCI6MTY1Mjc3ODM4Nn0.VWw_ThimDvZ0KW5tKMAMBsdliV6L7J0bfvNOoflBpmI
+
+{
+  "medicalF": "6272075df2b3c5e6f108b31a",
+  "month": 1,
+  "year": 2022,
+  "therapies": ["627cd0d20102dd65b883cb3c"],
+  "medicalS": [{
+    "id": "627b807cf2c4e2e6f8e8b866",
+    "quantity": 2
+  }],
+  "medicalFCollect": 23000,
+  "medicalFSpend": 43000,
+  "pPRFunds": 12000,
+  "dIPFunds": 88000,
+  "usedFunds": 20000,
+  "nextFunds": 20000,
+  "status": false
+}
+
+###
+// update
+PATCH http://localhost:8080/statis/edit
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI0MzEwNzIsImV4cCI6MTY1MjUxNzQ3Mn0.ZmSsx3yE2HspyIxQLstVaM6LtSMmkC9dUT-Zmud46MA
+
+{
+  "medicalF": "6272075df2b3c5e6f108b31a",
+  "month": 1,
+  "year": 2022,
+  "therapies": ["627cd0d20102dd65b883cb3c"],
+  "medicalS": [{
+    "id": "627b807cf2c4e2e6f8e8b866",
+    "quantity": 1
+  }],
+  "medicalFCollect": 23000,
+  "medicalFSpend": 43000,
+  "pPRFunds": 12000,
+  "dIPFunds": 88000,
+  "usedFunds": 20000,
+  "nextFunds": 20000
+}
+
+###
+// delete
+DELETE  http://localhost:8080/statis/delete?_id=627cc9593f165ac38285bb42
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI0MzEwNzIsImV4cCI6MTY1MjUxNzQ3Mn0.ZmSsx3yE2HspyIxQLstVaM6LtSMmkC9dUT-Zmud46MA
+
+###
+// get all
+GET  http://localhost:8080/statis/getall
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI0MzEwNzIsImV4cCI6MTY1MjUxNzQ3Mn0.ZmSsx3yE2HspyIxQLstVaM6LtSMmkC9dUT-Zmud46MA
+
+###
+// get by _id
+GET  http://localhost:8080/statis/getbyid?_id=627cd0d20102dd65b883cb3c
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI0MzEwNzIsImV4cCI6MTY1MjUxNzQ3Mn0.ZmSsx3yE2HspyIxQLstVaM6LtSMmkC9dUT-Zmud46MA
+
+###
+GET  http://localhost:8080/statis/filter?year=2022
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTI0MzEwNzIsImV4cCI6MTY1MjUxNzQ3Mn0.ZmSsx3yE2HspyIxQLstVaM6LtSMmkC9dUT-Zmud46MA

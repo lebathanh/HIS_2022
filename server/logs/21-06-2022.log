@@ -1,0 +1,35 @@
+19:07:23 GET / : 404 This api does not exist.
+19:21:50 GET /admin/getall : undefined Converting circular structure to JSON
+    --> starting at object with constructor 'Topology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle
+19:21:52 GET /admin/getall : undefined Converting circular structure to JSON
+    --> starting at object with constructor 'Topology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle
+19:48:11 POST /admin/add : 409 admin has been existed
+19:48:30 POST /admin/add : 409 admin has been existed
+19:50:43 POST /admin/add : 409 admin has been existed
+19:53:36 POST /admin/add : 409 admin has been existed
+20:15:30 GET / : 404 This api does not exist.
+20:16:08 POST /admin/login : 400 Incorrect password
+20:16:57 GET /admin/getall : 401 Unauthorized
+20:17:42 GET / : 404 This api does not exist.
+20:17:52 POST /admin/login : 400 Incorrect password
+20:17:59 POST /admin/login : 400 Incorrect password
+20:18:13 POST /admin/login : 400 Incorrect password
+20:18:17 POST /admin/login : 400 Incorrect password
+20:18:19 POST /admin/login : 400 Incorrect password
+20:20:24 POST /admin/login : 400 Incorrect password
+20:20:37 POST /admin/login : 400 Incorrect password
+20:21:25 POST /admin/login : 400 Incorrect password
+20:21:30 POST /admin/login : 400 Incorrect password
+20:21:33 POST /admin/login : 400 Incorrect password
+20:21:35 POST /admin/login : 400 Incorrect password
+20:22:46 POST /admin/login : 400 Incorrect password
+20:26:04 GET /admin/getall : 401 Unauthorized
+20:26:26 POST /admin/add : 401 Unauthorized
+20:27:41 GET / : 404 This api does not exist.
+20:27:56 GET / : 404 This api does not exist.

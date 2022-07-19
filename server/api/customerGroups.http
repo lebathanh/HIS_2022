@@ -1,0 +1,63 @@
+// add
+POST http://localhost:8080/cusgs/add
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEzMDIzMTUsImV4cCI6MTY1MTM4ODcxNX0.q9YjEjfd9nRP3XqC1z6c2Z-OjOq27gYcXUVSko7nCJ8
+
+{
+  "name": "DNC02",
+  "members": ["626bb2c18a082b7fd44f29d9"],
+  "joinType": "GD"
+}
+
+###
+// update
+PATCH http://localhost:8080/cusgs/edit
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEzMDIzMTUsImV4cCI6MTY1MTM4ODcxNX0.q9YjEjfd9nRP3XqC1z6c2Z-OjOq27gYcXUVSko7nCJ8
+
+{
+  "_id": "626cef9ca26ed57a62e8ef55",
+  "name": "DNC",
+  "members": ["626bb2c18a082b7fd44f29d9"],
+  "joinType": "GD"
+}
+
+###
+// add member
+PATCH http://localhost:8080/cusgs/addmembers
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEzMDIzMTUsImV4cCI6MTY1MTM4ODcxNX0.q9YjEjfd9nRP3XqC1z6c2Z-OjOq27gYcXUVSko7nCJ8
+
+{
+  "_id": "626cef9ca26ed57a62e8ef55",
+  "members": ["626bb2c18a082b7fd44f29d9", "626bc2a7479b6187222f9566"]
+}
+
+###
+// add member
+DELETE http://localhost:8080/cusgs/deletemembers
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEzMDIzMTUsImV4cCI6MTY1MTM4ODcxNX0.q9YjEjfd9nRP3XqC1z6c2Z-OjOq27gYcXUVSko7nCJ8
+
+{
+  "_id": "626cef9ca26ed57a62e8ef55",
+  "members": ["626bb2c18a082b7fd44f29d9", "626bc2a7479b6187222f9566"]
+}
+
+###
+// get by _id
+GET http://localhost:8080/cusgs/getbyid?_id=626cef9ca26ed57a62e8ef55
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEzMDIzMTUsImV4cCI6MTY1MTM4ODcxNX0.q9YjEjfd9nRP3XqC1z6c2Z-OjOq27gYcXUVSko7nCJ8
+
+###
+// get all
+GET http://localhost:8080/cusgs/getall/2
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEzMDIzMTUsImV4cCI6MTY1MTM4ODcxNX0.q9YjEjfd9nRP3XqC1z6c2Z-OjOq27gYcXUVSko7nCJ8
+
+###
+// search
+GET http://localhost:8080/cusgs/search?text=0
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3YTFjOGQ5NmEwMDI4MzhlOGU0OTUiLCJpYXQiOjE2NTEzMDIzMTUsImV4cCI6MTY1MTM4ODcxNX0.q9YjEjfd9nRP3XqC1z6c2Z-OjOq27gYcXUVSko7nCJ8
